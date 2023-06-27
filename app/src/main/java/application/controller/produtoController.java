@@ -18,4 +18,8 @@ public class produtoController {
         model.addAttribute("produtos", produtoRepo.findAll());
         return "/produto/list";
     }
+
+    public String insert() {
+        return "/produto/insert";
+    }
 }
